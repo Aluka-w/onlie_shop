@@ -1,14 +1,23 @@
 import Vue from "vue";
 import App from "./App.vue";
+import axios from "axios";
 import router from "./router";
 import store from "./store";
-import axios from "axios";
+import weui from 'weui.js'
+import Mint from 'mint-ui';
+import 'weui';
+import'mint-ui/lib/style.css';
+import './assets/iconfont/iconfont.css';
 // import 'lib-flexible';
-import "@a/css/reset.css";
-import "@a/css/mediaQuery.css";
+
+Vue.use(Mint);
+
+import { Search } from 'mint-ui';
+Vue.component(Search.name, Search);
 
 Vue.config.productionTip = false;
-// 把axios挂载到全局
+
+Vue.prototype.$weui = weui
 Vue.prototype.$axios = axios;
 
 new Vue({
