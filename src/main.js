@@ -1,12 +1,18 @@
 import Vue from "vue";
 import App from "./App.vue";
+import axios from "axios";
 import router from "./router";
 import store from "./store";
+import weui from 'weui.js'
+import 'weui'
+import './assets/iconfont/iconfont.css'
 // import 'lib-flexible';
-import "@a/css/reset.css";
-import "@a/css/mediaQuery.css";
+ 
 
 Vue.config.productionTip = false;
+
+Vue.prototype.$weui = weui
+Vue.prototype.$axios = axios;
 
 new Vue({
   router,
