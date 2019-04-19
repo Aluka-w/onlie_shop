@@ -27,6 +27,11 @@ export default new Router({
           name: "Mine",
           component: () => import(/* webpackChunkName: "about" */ "./views/Mine/Mine.vue"),
         },
+        {
+          path: "/Search",
+          name: "Search",
+          component: () => import(/* webpackChunkName: "about" */ "./views/Search/Search.vue"),
+        },
       ]
     }
   ]

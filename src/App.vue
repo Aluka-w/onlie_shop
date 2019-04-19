@@ -25,7 +25,7 @@ export default {
 #app {
   width: 100vw;
   height: 100vh;
-  background-color: skyblue;
+  background-color: #f9f9f9;
   .active  {
     color: tomato;
   }
